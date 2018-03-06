@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeLevel : MonoBehaviour {
 
-
-
 	// Use this for initialization
+	private string sceneToLoad;
 	void Start () {
+		sceneToLoad = PlayerPrefs.GetString ("NextSceneToLoad");
 		StartCoroutine ("LoadNewScene");
 	}
 	
@@ -19,11 +19,9 @@ public class ChangeLevel : MonoBehaviour {
 
 	IEnumerator LoadNewScene() {
 
-		//yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (2f);
 
-		AsyncOperation async = SceneManager.LoadSceneAsync("VRInteraction");
-
-		//async.pr
+		AsyncOperation async = SceneManager.LoadSceneAsync(sceneToLoad);
 
 		yield return async;
 	}

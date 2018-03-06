@@ -21,14 +21,12 @@ public class PlayerDoorInteraction : MonoBehaviour {
 
 	void OnControllerColliderHit (ControllerColliderHit hit) {
 		if (hit.gameObject.tag == "Door") {
-			// DO something
-			//hit.gameObject.GetComponent<DoorController>().myName
-
-			if (!colliding && hit.gameObject.GetComponent<DoorController>().isGazed) {
-				Debug.Log( "Enter to house..." );
+			if (!colliding && hit.gameObject.GetComponent<DoorController> ().isGazed) {
+				Debug.Log ("Enter to house...");
+				PlayerPrefs.SetString ("NextSceneToLoad", hit.gameObject.GetComponent<DoorController>().sceneToLoad);
 				SceneManager.LoadScene ("LoadingScreen", LoadSceneMode.Single);
 				this.colliding = true;
-			}	
+			}
 		}
 	}
 }

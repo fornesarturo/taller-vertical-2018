@@ -8,6 +8,7 @@ public class DoorController : MonoBehaviour {
 	// attribute to taht defines the scene to load
 	public string myName = "hola";
 	public bool isGazed;
+	public string sceneToLoad = "HouseDemo";
 
 	// Use this for initialization
 	void Start () {
