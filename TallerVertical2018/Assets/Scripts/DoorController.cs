@@ -7,22 +7,21 @@ public class DoorController : MonoBehaviour {
 	//public GameObject player;
 	// attribute to taht defines the scene to load
 	public string myName = "hola";
+	public bool isGazed;
 
 	// Use this for initialization
 	void Start () {
-		
+		isGazed = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (isGazed) {
+			// highlight door
+		}
 	}
 
-	public void enterToHouse() {
-		
+	public void doorGazed() {
+		isGazed = !isGazed;
 	}
-
-	void OnCollisionEnter (Collision col) {
-	}
-		
 }

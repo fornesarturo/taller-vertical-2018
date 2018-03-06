@@ -18,7 +18,9 @@ public class PlayerDoorInteraction : MonoBehaviour {
 		if (hit.gameObject.tag == "Door") {
 			// DO something
 			//hit.gameObject.GetComponent<DoorController>().myName 
-			Debug.Log(hit.gameObject.GetComponent<DoorController>().myName );
+			if (hit.gameObject.GetComponent<DoorController>().isGazed) {
+				Debug.Log( "Enter to house..." );
+			}	
 		}
 	}
 }
