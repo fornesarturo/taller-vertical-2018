@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectController : MonoBehaviour {
+	
 	private bool selected;
 	public Material selectedMaterial;
 	public Material normalMaterial;
@@ -14,7 +15,10 @@ public class ObjectController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (this.selected && Input.GetAxis ("Use") == 1) {
+			Debug.Log ("Selected item: " + transform.name);
+			Destroy (transform.gameObject);
+		}
 	}
 
 	public void SetSelected(bool selected) {
