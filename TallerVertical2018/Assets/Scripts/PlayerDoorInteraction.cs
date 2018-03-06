@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDoorInteraction : MonoBehaviour {
 
@@ -25,6 +26,7 @@ public class PlayerDoorInteraction : MonoBehaviour {
 
 			if (!colliding && hit.gameObject.GetComponent<DoorController>().isGazed) {
 				Debug.Log( "Enter to house..." );
+				SceneManager.LoadScene ("LoadingScreen", LoadSceneMode.Single);
 				this.colliding = true;
 			}	
 		}
