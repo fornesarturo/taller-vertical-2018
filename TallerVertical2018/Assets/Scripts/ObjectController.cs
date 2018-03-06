@@ -21,8 +21,13 @@ public class ObjectController : MonoBehaviour {
 		}
 	}
 
-	public void SetSelected(bool selected) {
+	public void SetSelected (bool selected) {
 		this.selected = selected;
 		renderer.material = selected ? selectedMaterial: normalMaterial;
+	}
+
+	public void Selected () {
+		Debug.Log ("Button Clicked!");
+		renderer.material = normalMaterial;
 	}
 }
