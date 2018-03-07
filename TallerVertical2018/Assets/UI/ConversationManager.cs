@@ -39,7 +39,7 @@ public class ConversationManager : MonoBehaviour {
     }
 
     void updateText() {
-        if (Input.GetKeyDown("space")) {	
+        if (Input.GetButtonDown("Jump")) {	
 			if (reader.EndOfStream) {
 				canvas.SetActive (false);
 				Player.GetComponent<CharacterController> ().enabled = true;

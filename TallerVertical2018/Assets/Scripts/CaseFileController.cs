@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class CaseFileController : MonoBehaviour {
 
 	public Transform canvas;
-	public Transform player;
-	public Text cluesBody;
+	public Transform Player;
+	public Text cluesBodyFront;
+	public Text cluesBodyLeft;
+	public Text cluesBodyRight;
 
 	// Use this for initialization
 	void Start () {
+		Player.GetComponent<CharacterController>().enabled = false;
 		showCaseFiles ();
 	}
 	
@@ -21,10 +24,12 @@ public class CaseFileController : MonoBehaviour {
 
 	void showCaseFiles() {
 		canvas.gameObject.SetActive (true);
-		canvas.position = player.GetChild (0).position + player.GetChild (0).forward * 3f;
-		canvas.rotation = player.GetChild (0).rotation;
+		canvas.position = Player.GetChild (0).position + Player.GetChild (0).forward * 2f;
+		canvas.rotation = Player.GetChild (0).rotation;
 		//string body = PlayerPrefs.GetString ("cluesbody1");
-		this.cluesBody.text = "Hola - Hello - Aloha \nPatos y Conejos\n Arturo es la toxina";
+		this.cluesBodyLeft.text = "Left Text";
+		this.cluesBodyFront.text = "Front Text";
+		this.cluesBodyRight.text = "Right Text";	
 	}
 
 	public void showCaseFile() {
