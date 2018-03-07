@@ -21,7 +21,7 @@ public class CaseFileController : MonoBehaviour {
 
 	void showCaseFiles() {
 		canvas.gameObject.SetActive (true);
-		canvas.position = player.GetChild (0).position + player.GetChild (0).forward * 2f;
+		canvas.position = player.GetChild (0).position + player.GetChild (0).forward * 3f;
 		canvas.rotation = player.GetChild (0).rotation;
 		//string body = PlayerPrefs.GetString ("cluesbody1");
 		this.cluesBody.text = "Hola - Hello - Aloha \nPatos y Conejos\n Arturo es la toxina";
