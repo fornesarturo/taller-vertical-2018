@@ -11,28 +11,22 @@ public class PlayerMov : MonoBehaviour {
 	private float roty;
 	private Vector3 moveDirection = Vector3.zero;
 	private Quaternion rotation;
+	private CharacterController controller;
 
 	void Start(){
-
+		this.controller = GetComponent<CharacterController>();
 	}
 
-
 	void Update() {
-		CharacterController controller = GetComponent<CharacterController>();
-
-
-		if (controller.isGrounded) {
-
+		if (this.controller.isGrounded) {
 			moveDirection = transform.GetChild (0).transform.forward * Input.GetAxis ("Vertical");
 			moveDirection += transform.GetChild (0).transform.right * Input.GetAxis ("Horizontal");
 			moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= speed;
 			if (Input.GetButton("Jump"))
 				moveDirection.y = jumpSpeed;
-
 		}
 		moveDirection.y -= gravity * Time.deltaTime;
-		controller.Move(moveDirection * Time.deltaTime);
-
+		this.controller.Move(moveDirection * Time.deltaTime);
 	}
 }
