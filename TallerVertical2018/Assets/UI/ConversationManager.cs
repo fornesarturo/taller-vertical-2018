@@ -22,11 +22,14 @@ public class ConversationManager : MonoBehaviour {
         canvas.SetActive(true);
 		Player.GetComponent<CharacterController>().enabled = false;
 
-        theSourceFile = new FileInfo("Dialog.txt");
+		theSourceFile = new FileInfo("Assets/Assests/Dialogs/" + PlayerPrefs.GetString("NextSceneToLoad")+ ".txt");
 
         reader = theSourceFile.OpenText();
 		canvas.transform.position = Player.GetChild(0).position+ new Vector3(0,-0.4f,0) + (Player.GetChild(0).forward*2);
 		canvas.transform.rotation = Player.GetChild (0).rotation;
+
+		animalName.text = reader.ReadLine();
+		conversation.text = reader.ReadLine();
 
     }
 	
