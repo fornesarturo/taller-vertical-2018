@@ -14,13 +14,19 @@ public class ConversationManager : MonoBehaviour {
 
     public FileInfo theSourceFile;
     protected StreamReader reader = null;
+	public Transform Player;
 
     // Use this for initialization
     void Start () {
 
-        canvas.SetActive(false);
-        theSourceFile = new FileInfo("ConvoDePrueba.txt");
+        canvas.SetActive(true);
+		Player.GetComponent<CharacterController>().enabled = false;
+
+        theSourceFile = new FileInfo("Dialog.txt");
+
         reader = theSourceFile.OpenText();
+		canvas.transform.position = Player.GetChild(0).position+ new Vector3(0,-0.4f,0) + (Player.GetChild(0).forward*2);
+		canvas.transform.rotation = Player.GetChild (0).rotation;
 
     }
 	
@@ -30,11 +36,14 @@ public class ConversationManager : MonoBehaviour {
     }
 
     void updateText() {
-        if (Input.GetKeyDown("space")) {
-            if (reader.EndOfStream)
-                canvas.SetActive(false);
-            if (!canvas.activeInHierarchy & !reader.EndOfStream)
-                canvas.SetActive(true);
+        if (Input.GetKeyDown("space")) {	
+			if (reader.EndOfStream) {
+				canvas.SetActive (false);
+				Player.GetComponent<CharacterController> ().enabled = true;
+			}
+			if (!canvas.activeInHierarchy & !reader.EndOfStream) {
+				canvas.SetActive (true);
+			}
             animalName.text = reader.ReadLine();
             conversation.text = reader.ReadLine();
 
