@@ -31,6 +31,8 @@ public class PauseGame : MonoBehaviour {
 
 	public void Pause(){
 		if (!canvas.gameObject.activeInHierarchy) {
+			canvas.position = Player.GetChild(0).position + Player.GetChild(0).forward;
+			canvas.rotation = Player.GetChild (0).rotation;
 			EventSystem.current.GetComponent<GvrPointerInputModule>().enabled = false;
 			EventSystem.current.GetComponent<StandaloneInputModule>().enabled = true;
 			canvas.gameObject.SetActive (true);
