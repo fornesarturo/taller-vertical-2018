@@ -9,7 +9,7 @@ public class EnableSmellVision : MonoBehaviour {
 	void Awake () {
 
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
-		PlayerPrefs.SetInt ("ellenaDead", 0);
+		//PlayerPrefs.SetInt ("ellenaDead", 0);
 	}
 
 	// Use this for initialization
