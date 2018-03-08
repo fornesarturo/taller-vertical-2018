@@ -3850,7 +3850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &726707746
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7250,7 +7250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4263831488087662, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 7.88
       objectReference: {fileID: 0}
     - target: {fileID: 4263831488087662, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7280,7 +7280,7 @@ Prefab:
         type: 2}
       propertyPath: objects.Array.data[0]
       value: 
-      objectReference: {fileID: 1373903842}
+      objectReference: {fileID: 220129782}
     - target: {fileID: 114409228319089880, guid: 1ff1fda17d357da4b8679bcbac9bd790,
         type: 2}
       propertyPath: m_Enabled
@@ -7290,12 +7290,16 @@ Prefab:
         type: 2}
       propertyPath: objects.Array.data[0]
       value: 
-      objectReference: {fileID: 456791101}
+      objectReference: {fileID: 220129782}
     - target: {fileID: 114409228319089880, guid: 1ff1fda17d357da4b8679bcbac9bd790,
         type: 2}
       propertyPath: objects.Array.data[1]
       value: 
-      objectReference: {fileID: 220129782}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688839764317562, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114137937458168702, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
@@ -7973,11 +7977,35 @@ MonoBehaviour:
   animalName: {fileID: 426294022}
   conversation: {fileID: 333013131}
   canvas: {fileID: 1650493228}
-  Player: {fileID: 1373903846}
---- !u!4 &1373903846 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: b0c3212294c502749947e98316e4e632, type: 3}
-  m_PrefabInternal: {fileID: 1173625043}
+  ellenaScript: {fileID: 1373903846}
+  conversationTitle: City
+--- !u!114 &1373903846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373903842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59fc5c613e600041ab2c073965431b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1412330830 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 5300a5d02af324e46aa56285b6d4de17, type: 3}
+  m_PrefabInternal: {fileID: 1066052608}
+--- !u!65 &1412330834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412330830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.220822, y: 1.7854863, z: 4.0524054}
+  m_Center: {x: 0.31750622, y: 0.87274325, z: 4.1638355}
 --- !u!1001 &1426373118
 Prefab:
   m_ObjectHideFlags: 0
@@ -10581,6 +10609,87 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224084714168303610, guid: 0b6e7c5f38ed1dc428962612646dab2a,
     type: 2}
   m_PrefabInternal: {fileID: 1662034302}
+--- !u!1 &1921759423 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 474af0437b849bf4e9cd22f9eee4c424, type: 3}
+  m_PrefabInternal: {fileID: 488377441}
+--- !u!64 &1921759424
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921759423}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 474af0437b849bf4e9cd22f9eee4c424, type: 3}
+--- !u!114 &1921759425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921759423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1921759427}
+          m_MethodName: SetSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1921759427}
+          m_MethodName: SetSelected
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &1921759427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921759423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20bb9993780a874d97fbf838611c785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalName: {fileID: 426294022}
+  conversation: {fileID: 333013131}
+  canvas: {fileID: 1650493228}
+  ellenaScript: {fileID: 0}
+  conversationTitle: Scene_02
 --- !u!1 &1928089954
 GameObject:
   m_ObjectHideFlags: 0
