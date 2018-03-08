@@ -5,37 +5,55 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
 public class PauseButtonMethods : MonoBehaviour {
-	// Use this for initialization
+
 	private bool selecting;
+	public Transform canvas;
+	public Transform Player;
+
 	void Start () {
 		selecting = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () { }
 
 	public void GoToCaseFiles() {
-		Debug.Log ("Go To Case Files!");
 		StartCoroutine ("goToCaseFilesCorroutine");
 	}
 
 	public void ReturnToScene() {
-		Debug.Log ("Return to Scene!");
 		StartCoroutine ("returnToSceneCorroutine");
 	}
 
 	public void ExitGame() {
-		Debug.Log ("Exit Game!");
 		StartCoroutine ("exitCorroutine");
+	}
+
+	public void Resume() {
+		Debug.Log ("Resume game!");
+		StartCoroutine ("resumeCorroutine");
 	}
 
 	public void SetGaze(bool gaze) {
 		this.selecting = gaze;
 		if (!this.selecting) {
-			Debug.Log ("STOPPED!");
 			StopAllCoroutines ();
+		}
+	}
+
+	IEnumerator resumeCorroutine() {
+		Debug.Log ("Started resume corroutine");
+		float seconds = 0f;
+		while (true) {
+			if (seconds < 1f) {
+				seconds += 1f;
+			} else {
+				canvas.gameObject.SetActive (false);
+				if (SceneManager.GetActiveScene ().name != "CaseFileTest") {
+					Player.GetComponent<CharacterController>().enabled = true;
+				}
+			}
+			yield return new WaitForSecondsRealtime (1f);
 		}
 	}
 
