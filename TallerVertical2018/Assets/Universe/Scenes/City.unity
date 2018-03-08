@@ -7239,6 +7239,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114409228319089880, guid: 1ff1fda17d357da4b8679bcbac9bd790,
+        type: 2}
+      propertyPath: objects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4263831488087662, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
       propertyPath: m_LocalPosition.x
       value: -15.39
@@ -7270,6 +7275,16 @@ Prefab:
     - target: {fileID: 4263831488087662, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
       propertyPath: m_RootOrder
       value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 114409228319089880, guid: 1ff1fda17d357da4b8679bcbac9bd790,
+        type: 2}
+      propertyPath: objects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1373903842}
+    - target: {fileID: 114409228319089880, guid: 1ff1fda17d357da4b8679bcbac9bd790,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114137937458168702, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
@@ -7948,7 +7963,11 @@ MonoBehaviour:
   animalName: {fileID: 426294022}
   conversation: {fileID: 333013131}
   canvas: {fileID: 1650493228}
-  Player: {fileID: 0}
+  Player: {fileID: 1373903846}
+--- !u!4 &1373903846 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400002, guid: b0c3212294c502749947e98316e4e632, type: 3}
+  m_PrefabInternal: {fileID: 1173625043}
 --- !u!1001 &1426373118
 Prefab:
   m_ObjectHideFlags: 0
