@@ -57,7 +57,7 @@ public class ObjectController : MonoBehaviour {
 			}
 			PlayerPrefs.SetInt (transform.name + "Collected", 1);
 			canvasDescription.SetActive (false);
-			Destroy (transform.gameObject);
+			Destroy (transform.parent.gameObject);
 		}
 	}
 

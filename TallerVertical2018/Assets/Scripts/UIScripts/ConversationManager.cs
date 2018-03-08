@@ -12,42 +12,55 @@ public class ConversationManager : MonoBehaviour {
     public Text conversation;
 
     public GameObject canvas;
-
-    public FileInfo theSourceFile;
-    protected StreamReader reader = null;
 	public Transform Player;
-	public Transform Npc;
-	private String[] lines;
-	private int i=0;
-	private bool doDialog;
 
+    //public FileInfo theSourceFile;
+    //protected StreamReader reader = null;
+	//public Transform Npc;
+
+	private String[] lines;
+	private int i = 0;
+	private bool doDialog;
+	private bool selected = false;
 		
+	void Awake () {
+		
+		PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 0);
+	}
+
     // Use this for initialization
     void Start () {
-		if (PlayerPrefs.GetInt (SceneManager.GetActiveScene ().name + "dialog",0) == 0) {
-			canvas.SetActive (true);
-			PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 1);
-
-			TextAsset level = Resources.Load<TextAsset> (SceneManager.GetActiveScene().name);
-			lines = level.text.Split ("\n" [0]);
-
-			Npc.LookAt (Player.position);
-
-			canvas.transform.position = Npc.position + new Vector3 (0, -0.5f, 0) + (Npc.forward * 5);
-			canvas.transform.rotation = Npc.rotation;
-			canvas.transform.Rotate(0,180,0);
-
-			animalName.text = lines [i];
-			conversation.text = lines [++i];
-			doDialog = true;
-		} else {
-			Player.GetComponent<CharacterController>().enabled = true;
-		}
-
+		
     }
 	
 	// Update is called once per frame
 	void Update () {
+		
+		if (selected) {
+
+			if (PlayerPrefs.GetInt (SceneManager.GetActiveScene ().name + "dialog",0) == 0) {
+				
+				Player.GetComponent<CharacterController>().enabled = false;
+				canvas.SetActive (true);
+				PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 1);
+
+				TextAsset level = Resources.Load<TextAsset> (SceneManager.GetActiveScene().name);
+				lines = level.text.Split ("\n" [0]);
+
+				transform.LookAt (Player.position);
+
+				canvas.transform.position = transform.position + new Vector3 (0, -0.3f, 0) + (transform.forward * 5);
+				canvas.transform.rotation = transform.rotation;
+				canvas.transform.Rotate(0,180,0);
+
+				animalName.text = lines [i];
+				conversation.text = lines [++i];
+				doDialog = true;
+			} else {
+				//Player.GetComponent<CharacterController>().enabled = true;
+			}
+		}
+
         updateText();
     }
 
@@ -64,4 +77,8 @@ public class ConversationManager : MonoBehaviour {
 
         }
     }
+
+	public void SetSelected(bool selected) {
+		this.selected = selected;
+	}
 }

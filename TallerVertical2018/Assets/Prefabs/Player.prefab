@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 4263831488087662}
   - component: {fileID: 143259747943508044}
   - component: {fileID: 114972229816692664}
+  - component: {fileID: 114454828178963784}
+  - component: {fileID: 114409228319089880}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -158,8 +160,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811551418521366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -34.46188, y: 8, z: 6.514408}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4688839764317562}
   - {fileID: 4005540606965212}
@@ -200,7 +202,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1688554936362794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4667123975749092}
@@ -241,8 +243,8 @@ Camera:
   m_GameObject: {fileID: 1688554936362794}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.71323526, g: 0.71323526, b: 0.71323526, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -465,6 +467,33 @@ MonoBehaviour:
     touching: 0
     touchPos: {x: 0.5, y: 0.5}
   maximumAlpha: 1
+--- !u!114 &114409228319089880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1811551418521366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29d6e9d5922a80d408d357e19f6c40d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 1984647315283112, guid: 2196ba026d44ca14e9d8b31603e95062,
+    type: 2}
+  items: []
+  doors: []
+  objects: []
+--- !u!114 &114454828178963784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1811551418521366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1458f4a5cdc835942bdaf5bffff661d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114485649876957436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -561,9 +590,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f161accf161c2b4d84d5ce5d1b006e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 10
   jumpSpeed: 8
   gravity: 20
+  moveOnStart: 1
 --- !u!120 &120652736403389826
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -675,7 +705,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 7
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3

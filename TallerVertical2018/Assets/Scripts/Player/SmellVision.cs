@@ -6,7 +6,7 @@ using UnityEngine;
 public class SmellVision : MonoBehaviour
 {
 
-    public Transform Player;
+    //public Transform Player;
     public GameObject arrowPrefab;
     GameObject arrow;
     bool arrowExists;
@@ -32,8 +32,8 @@ public class SmellVision : MonoBehaviour
         selectArray();
         updateIndex();
         arrow = Instantiate(arrowPrefab) as GameObject;
-        arrow.transform.position = Player.GetChild(0).position + new Vector3(0, -0.8f, 0) + (Player.GetChild(0).forward * 3);
-		arrow.transform.position= new Vector3(arrow.transform.position.x,0.3f,arrow.transform.position.z);
+		arrow.transform.position = transform.GetChild(0).position + new Vector3(0, -0.8f, 0) + (transform.GetChild(0).forward * 3);
+		arrow.transform.position= new Vector3(arrow.transform.position.x, transform.position.y - 1f, arrow.transform.position.z);
         float angle = Vector3.Angle(objects[currentIndex].transform.position - arrow.transform.position, transform.forward);
         angle = calculateCorrectAngle(objects[currentIndex], arrow, angle);
         arrow.transform.Rotate(0, 0, angle);
@@ -42,6 +42,9 @@ public class SmellVision : MonoBehaviour
 
     void destroyArrow() {
         Destroy(arrow, 1.4f);
+		//items = new GameObject[1];
+		//doors = new GameObject[1];
+		//objects = new GameObject[1];
         Invoke("changeArrowExistence", 2f);
         //arrowExists = false;
     }
@@ -58,7 +61,7 @@ public class SmellVision : MonoBehaviour
     }
 
     void updateIndex() {
-        for (int i = currentIndex; i < objects.Length; i++) {
+        for (int i = 0; i < objects.Length; i++) {
             if (objects[i] == null)
             {
                 i++;
