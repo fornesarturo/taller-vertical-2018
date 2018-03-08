@@ -9,47 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1172756617779050}
+  m_RootGameObject: {fileID: 1509527368156616}
   m_IsPrefabParent: 1
---- !u!1 &1172756617779050
+--- !u!1 &1509527368156616
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4509210585781068}
-  - component: {fileID: 33700164844066824}
-  - component: {fileID: 65229771261046830}
-  - component: {fileID: 23792296213875018}
-  - component: {fileID: 114512389665883842}
-  - component: {fileID: 114503886698260150}
+  - component: {fileID: 4337979391724346}
+  - component: {fileID: 33342112870241670}
+  - component: {fileID: 65581399472288694}
+  - component: {fileID: 23633772865458138}
+  - component: {fileID: 114295187341771818}
+  - component: {fileID: 114198096635641758}
   m_Layer: 0
-  m_Name: Object
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4509210585781068
+--- !u!4 &4337979391724346
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172756617779050}
+  m_GameObject: {fileID: 1509527368156616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5910001, z: 4.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.97, y: 1.5910001, z: 0.049000025}
+  m_LocalScale: {x: 0.2543337, y: 3.052313, z: 1.9342216}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23792296213875018
+--- !u!23 &23633772865458138
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172756617779050}
+  m_GameObject: {fileID: 1509527368156616}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 24e6afc7943e4db4c9a76062a0a50e63, type: 2}
+  - {fileID: 2100000, guid: 27d4afa1c18a66c4cb6907875989c915, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,44 +78,45 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33700164844066824
+--- !u!33 &33342112870241670
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172756617779050}
+  m_GameObject: {fileID: 1509527368156616}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65229771261046830
+--- !u!65 &65581399472288694
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172756617779050}
+  m_GameObject: {fileID: 1509527368156616}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114503886698260150
+--- !u!114 &114198096635641758
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172756617779050}
+  m_GameObject: {fileID: 1509527368156616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c45caa71e22b849418a9c5dd5f855203, type: 3}
+  m_Script: {fileID: 11500000, guid: cafaf8e96b6afc84286c4244bcc13aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedMaterial: {fileID: 2100000, guid: 27d4afa1c18a66c4cb6907875989c915, type: 2}
-  normalMaterial: {fileID: 2100000, guid: 24e6afc7943e4db4c9a76062a0a50e63, type: 2}
---- !u!114 &114512389665883842
+  myName: hola
+  isGazed: 0
+  sceneToLoad: HouseDemo
+--- !u!114 &114295187341771818
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1172756617779050}
+  m_GameObject: {fileID: 1509527368156616}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -126,26 +127,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114503886698260150}
-          m_MethodName: SetSelected
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114503886698260150}
-          m_MethodName: SetSelected
-          m_Mode: 6
+        - m_Target: {fileID: 114198096635641758}
+          m_MethodName: doorGazed
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -156,12 +140,12 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
+  - eventID: 1
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114503886698260150}
-          m_MethodName: Selected
+        - m_Target: {fileID: 114198096635641758}
+          m_MethodName: doorGazed
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

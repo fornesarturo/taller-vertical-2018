@@ -12,12 +12,14 @@ public class PlayerMov : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	private Quaternion rotation;
 	private CharacterController controller;
+	public bool moveOnStart;
 
-	void Start(){
+	void Start () {
 		this.controller = GetComponent<CharacterController>();
+		this.controller.enabled = moveOnStart;
 	}
 
-	void Update() {
+	void Update () {
 		if (this.controller.isGrounded) {
 			moveDirection = transform.GetChild (0).transform.forward * Input.GetAxis ("Vertical");
 			moveDirection += transform.GetChild (0).transform.right * Input.GetAxis ("Horizontal");
