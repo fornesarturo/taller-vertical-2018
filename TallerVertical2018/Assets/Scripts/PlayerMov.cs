@@ -12,10 +12,11 @@ public class PlayerMov : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	private Quaternion rotation;
 	private CharacterController controller;
+	public bool moveOnStart;
 
 	void Start () {
 		this.controller = GetComponent<CharacterController>();
-		this.controller.enabled = true;
+		this.controller.enabled = moveOnStart;
 	}
 
 	void Update () {

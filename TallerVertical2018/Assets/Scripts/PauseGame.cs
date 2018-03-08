@@ -10,7 +10,7 @@ public class PauseGame : MonoBehaviour {
 
 	void Start () {
 		Player.gameObject.SetActive (true);
-		Player.GetComponent<CharacterController>().enabled = true;
+		//Player.GetComponent<CharacterController>().enabled = true;
 	}
 
 	void Update () {
