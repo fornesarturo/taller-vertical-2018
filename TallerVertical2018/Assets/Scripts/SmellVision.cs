@@ -21,7 +21,7 @@ public class SmellVision : MonoBehaviour
     GameObject arrow;
     bool arrowExists;
 
-    //public Transform target;
+    public Transform target;
 
     public Transform[] locations;
     int currentIndex = 0;
@@ -39,10 +39,15 @@ public class SmellVision : MonoBehaviour
     }
 
     void createArrow() {
-        arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity) as GameObject;
+        arrow = Instantiate(arrowPrefab, Player.transform) as GameObject;
         arrow.transform.position = Player.GetChild(0).position + new Vector3(0, -0.8f, 0) + (Player.GetChild(0).forward * 3);
-        arrow.transform.LookAt(locations[currentIndex]);
-        arrow.transform.Rotate(arrow.transform.rotation.x + 90, arrow.transform.rotation.y + 90, arrow.transform.rotation.z + 90);
+        //arrow.transform.LookAt(locations[currentIndex]);
+        float angle = Vector3.Angle(target.position - arrow.transform.position, transform.forward);
+        angle = calculateCorrectAngle(target, arrow, angle);
+        arrow.transform.Rotate(0, 0, angle);
+        //arrow.transform.Rotate(90, 90, 90);
+        //Debug.Log(target.position);
+        //Debug.Log(arrow.transform.position);
         changeArrowExistence();
     }
 
@@ -53,7 +58,7 @@ public class SmellVision : MonoBehaviour
     }
 
     void arrowLogic() {
-        if (!arrowExists && Input.GetKeyDown("space")){
+        if (!arrowExists && Input.GetButtonDown("Special")){
             createArrow();
             destroyArrow();
         }
@@ -73,5 +78,12 @@ public class SmellVision : MonoBehaviour
                 currentIndex = i;
             }
         }
+    }
+
+    float calculateCorrectAngle(Transform target, GameObject arrow, float angle) {
+        if (target.position.x > arrow.transform.position.x) {
+            return -angle;
+        }
+        return angle;
     }
 }
