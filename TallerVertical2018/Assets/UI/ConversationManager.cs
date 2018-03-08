@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class ConversationManager : MonoBehaviour {
 
@@ -15,23 +16,33 @@ public class ConversationManager : MonoBehaviour {
     public FileInfo theSourceFile;
     protected StreamReader reader = null;
 	public Transform Player;
+	public Transform Npc;
 	private String[] lines;
 	private int i=0;
+	private bool doDialog;
 
 
     // Use this for initialization
     void Start () {
-        canvas.SetActive(true);
+		if (PlayerPrefs.GetInt (SceneManager.GetActiveScene ().name + "dialog") == 0) {
+			canvas.SetActive (true);
+			PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 1);
 
-		TextAsset level = Resources.Load<TextAsset> (PlayerPrefs.GetString ("NextSceneToLoad"));
+			TextAsset level = Resources.Load<TextAsset> (PlayerPrefs.GetString ("NextSceneToLoad"));
+			lines = level.text.Split ("\n" [0]);
 
-		lines = level.text.Split ("\n" [0]);
+			Npc.LookAt (Player.position);
 
-		canvas.transform.position = Player.GetChild(0).position+ new Vector3(0,-0.4f,0) + (Player.GetChild(0).forward*2);
-		canvas.transform.rotation = Player.GetChild (0).rotation;
+			canvas.transform.position = Npc.position + new Vector3 (0, -0.4f, 0) + (Npc.forward * 5);
+			canvas.transform.rotation = Npc.rotation;
+			canvas.transform.Rotate(0,180,0);
 
-		animalName.text = lines[i];
-		conversation.text = lines[++i];
+			animalName.text = lines [i];
+			conversation.text = lines [++i];
+			doDialog = true;
+		} else {
+			Player.GetComponent<CharacterController>().enabled = true;
+		}
 
     }
 	
@@ -41,7 +52,7 @@ public class ConversationManager : MonoBehaviour {
     }
 
     void updateText() {
-		if (Input.GetButtonDown("Jump")) {	
+		if (Input.GetButtonDown("Jump")&&doDialog) {	
 			if (i < lines.Length) {
 				animalName.text = lines[++i];
 				conversation.text = lines[++i];

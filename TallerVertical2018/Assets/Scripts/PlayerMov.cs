@@ -14,9 +14,13 @@ public class PlayerMov : MonoBehaviour {
 	private CharacterController controller;
 	public bool moveOnStart;
 
-	void Start () {
+	void Awake(){
 		this.controller = GetComponent<CharacterController>();
 		this.controller.enabled = moveOnStart;
+	}
+
+	void Start () {
+		
 	}
 
 	void Update () {

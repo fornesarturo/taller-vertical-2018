@@ -51,8 +51,8 @@ public class CaseFileController : MonoBehaviour {
 
 	void showCaseFiles() {
 		canvas.gameObject.SetActive (true);
-		canvas.position = Player.GetChild (0).position + Player.GetChild (0).forward * 2f;
-		canvas.rotation = Player.GetChild (0).rotation;
+		//canvas.position = Player.GetChild (0).position + Player.GetChild (0).forward * 2f;
+		//canvas.rotation = Player.GetChild (0).rotation;
 		//string body = PlayerPrefs.GetString ("cluesbody1");
 		this.cluesBodyLeft.text = cluesStringLeft;
 		this.cluesBodyFront.text = cluesStringFront;
