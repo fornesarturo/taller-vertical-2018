@@ -25,6 +25,8 @@ public class ConversationManager : MonoBehaviour {
 		
 	void Awake () {
 		
+		Player = GameObject.FindGameObjectWithTag ("Player").transform;
+		
 		PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 0);
 	}
 

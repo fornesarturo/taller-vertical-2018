@@ -17,7 +17,7 @@ public class PlayerMov : MonoBehaviour {
 
 	void Awake(){
 		this.controller = GetComponent<CharacterController>();
-		this.controller.enabled = moveOnStart;
+		//this.controller.enabled = moveOnStart;
 		//PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 0);
 	}
 

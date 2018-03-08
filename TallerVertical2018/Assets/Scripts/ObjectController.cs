@@ -18,6 +18,10 @@ public class ObjectController : MonoBehaviour {
 	[SerializeField] private GameObject canvasDescription;
 	[SerializeField] private Transform Player;
 
+	void Awake() {
+		Player = GameObject.FindGameObjectWithTag ("Player").transform;
+	}
+
 	// Use this for initialization
 	void Start () {
 		
