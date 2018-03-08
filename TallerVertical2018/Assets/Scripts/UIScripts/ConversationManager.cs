@@ -24,12 +24,13 @@ public class ConversationManager : MonoBehaviour {
 	private bool selected = false;
 
 	[SerializeField] EnableSmellVision ellenaScript;
+	[SerializeField] string conversationTitle;
 		
 	void Awake () {
 		
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
 		
-		PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 0);
+		PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
 	}
 
     // Use this for initialization
@@ -42,13 +43,14 @@ public class ConversationManager : MonoBehaviour {
 		
 		if (selected) {
 
-			if (PlayerPrefs.GetInt (SceneManager.GetActiveScene ().name + "dialog",0) == 0) {
+			if (PlayerPrefs.GetInt (conversationTitle + "dialog",0) == 0) {
 				
 				Player.GetComponent<CharacterController>().enabled = false;
 				canvas.SetActive (true);
-				PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 1);
+				PlayerPrefs.SetInt (conversationTitle + "dialog", 1);
 
-				TextAsset level = Resources.Load<TextAsset> (SceneManager.GetActiveScene().name);
+				TextAsset level = Resources.Load<TextAsset> (conversationTitle);
+				Debug.Log (level);
 				lines = level.text.Split ("\n" [0]);
 
 				transform.LookAt (Player.position);
@@ -76,7 +78,10 @@ public class ConversationManager : MonoBehaviour {
 			} else {
 
 				canvas.SetActive (false);
+				animalName.text = "";
+				conversation.text = "";
 				Player.GetComponent<CharacterController>().enabled = true;
+
 				if (ellenaScript != null) {
 					ellenaScript.enableSmell();
 				}
