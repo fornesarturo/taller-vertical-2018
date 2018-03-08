@@ -1,4 +1,0 @@
-Perro:
-Woof
-Gato: 
-Miau

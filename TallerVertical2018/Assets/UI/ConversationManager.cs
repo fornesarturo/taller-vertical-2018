@@ -21,19 +21,19 @@ public class ConversationManager : MonoBehaviour {
 	private int i=0;
 	private bool doDialog;
 
-
+		
     // Use this for initialization
     void Start () {
-		if (PlayerPrefs.GetInt (SceneManager.GetActiveScene ().name + "dialog") == 0) {
+		if (PlayerPrefs.GetInt (SceneManager.GetActiveScene ().name + "dialog",0) == 0) {
 			canvas.SetActive (true);
 			PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 1);
 
-			TextAsset level = Resources.Load<TextAsset> (PlayerPrefs.GetString ("NextSceneToLoad"));
+			TextAsset level = Resources.Load<TextAsset> (SceneManager.GetActiveScene().name);
 			lines = level.text.Split ("\n" [0]);
 
 			Npc.LookAt (Player.position);
 
-			canvas.transform.position = Npc.position + new Vector3 (0, -0.4f, 0) + (Npc.forward * 5);
+			canvas.transform.position = Npc.position + new Vector3 (0, -0.5f, 0) + (Npc.forward * 5);
 			canvas.transform.rotation = Npc.rotation;
 			canvas.transform.Rotate(0,180,0);
 
@@ -53,10 +53,11 @@ public class ConversationManager : MonoBehaviour {
 
     void updateText() {
 		if (Input.GetButtonDown("Jump")&&doDialog) {	
-			if (i < lines.Length) {
+			if (i < lines.Length-1) {
 				animalName.text = lines[++i];
 				conversation.text = lines[++i];
 			} else {
+
 				canvas.SetActive (false);
 				Player.GetComponent<CharacterController>().enabled = true;
 			}

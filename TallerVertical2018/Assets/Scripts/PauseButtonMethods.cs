@@ -91,6 +91,7 @@ public class PauseButtonMethods : MonoBehaviour {
 			if (seconds < 1f) {
 				seconds += 1f;
 			} else {
+				PlayerPrefs.DeleteAll ();
 				Application.Quit ();
 			}
 			yield return new WaitForSecondsRealtime (1f);

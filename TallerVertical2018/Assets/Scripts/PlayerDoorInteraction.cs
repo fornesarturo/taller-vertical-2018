@@ -20,7 +20,9 @@ public class PlayerDoorInteraction : MonoBehaviour {
 	}
 
 	void OnControllerColliderHit (ControllerColliderHit hit) {
+		
 		if (hit.gameObject.tag == "Door") {
+			Debug.Log (hit.gameObject.GetComponent<DoorController> ().isGazed);
 			if (!colliding && hit.gameObject.GetComponent<DoorController> ().isGazed) {
 				Debug.Log ("Enter to house...");
 				PlayerPrefs.SetString ("NextSceneToLoad", hit.gameObject.GetComponent<DoorController>().sceneToLoad);

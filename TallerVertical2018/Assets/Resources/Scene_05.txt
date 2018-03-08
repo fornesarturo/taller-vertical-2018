@@ -1,0 +1,12 @@
+FRANK:
+Hello, how can I help you?
+ELENA:
+Good night, sir. I'm detective Elena and this is my partner Rob, we're currently investigating a case about the disappearance of Mr. Mason, and we noticed that he owed you some money. Could you please tell us when was the last time you saw him?
+FRANK: Mr. Mason has gone missing!? Oh my, that's terrible! I saw him yesterday. He came here to ask me for more time to pay his debt, so I gave him only one more week. 
+ELENA: So you talked to him last night.
+FRANK: Oh no, I was working up late, we talked earlier in the afternoon instead.
+ELENA: Alright... but I have a feeling that you know something else.
+ROB:
+Hey man, wait a minute... you said that you were working at night but this poster says that you close at 6pm.
+FRANK:
+Oh yeah, but I was working on... other things... let's say I provide rare artifacts that I'm not allowed to sell during day time... you know what I mean. If you want, I can get you something. By the way, are you interested in some delicious croquettes?

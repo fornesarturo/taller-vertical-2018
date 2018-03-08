@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMov : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class PlayerMov : MonoBehaviour {
 	void Awake(){
 		this.controller = GetComponent<CharacterController>();
 		this.controller.enabled = moveOnStart;
+		//PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 0);
 	}
 
 	void Start () {

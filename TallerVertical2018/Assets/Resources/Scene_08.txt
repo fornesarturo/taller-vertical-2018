@@ -1,0 +1,26 @@
+JASPER:
+Greetings! Can I help you?
+ROB:
+Do you happen to have a mouse locator? Like a GPS?
+ELENA:
+Rob, seriously.
+ROB:
+Elena, let's be honest, we're not even close to solving Mason's case. 
+JASPER:
+Did something happen to Mason, as in, Mason the mouse?
+ROB:
+Yes, indeed. He has gone missing. Why?
+JASPER:
+We used to be partners, how sad. 
+ELENA:
+Could you please tell me more about your relationship with him?
+JASPER:
+Well, we used to work together for Salamandra, but we secretly used our time to search for valuable items to sell. Mason had a good eye and made some money with that; he was doing better than what he did at the trash-picking job, so he became a full-time merchant instead. I don't think he ever told his family. For real, sometimes I get jealous. I've had bad thoughts before, life often feels so unfair. I don't have money, or a family; let alone luck.
+ELENA:
+Hold on, could you tell me more about your job at the sewers?
+JASPER:
+Salamandra is a pretty awful guy. Say, he always makes me work extra hours and pays me misery. I'm sure that he discriminates me for being a cockroach. I have already reported him to the National Syndicate, but no one seems to care about my struggle.
+ELENA:
+I'm very sorry to hear that. 
+JASPER:
+Wait a minute, but you're related to cops right? Will you help me reporting Salamandra to the National Syndicate? They love cats, I'm sure they will hear what you have to say about my story.
