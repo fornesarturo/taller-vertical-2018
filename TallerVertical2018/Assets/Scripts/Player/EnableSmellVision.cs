@@ -23,8 +23,8 @@ public class EnableSmellVision : MonoBehaviour {
 
 	public void enableSmell() {
 		Player.gameObject.GetComponent<SmellVision> ().enabled = true;
-		Player.position = this.transform.position;
-		Player.rotation = this.transform.rotation;
+		Player.position = this.transform.position + new Vector3 (0, 8f, 0);
+		//Player.rotation = this.transform.rotation;
 		Destroy (this.gameObject);
 	}
 }
