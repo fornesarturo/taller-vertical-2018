@@ -55,16 +55,18 @@ public class SmellVision : MonoBehaviour
     }
 
     bool updateIndex() {
+		currentIndex = -1;
         for (int i = 0; i < objects.Length; i++) {
-            if (objects[i] == null)
-            {
-                i++;
-            }
-            else {
-                currentIndex = i;
+			Debug.Log ("In loop: " + i);
+			Debug.Log ("objects[i]: " + objects [i]);
+			if (!objects[i].Equals(null))
+            {	
+				currentIndex = i;
+				Debug.Log ("Found one! At: " + i);
 				return true;
             }
         }
+		Debug.Log ("Nothing!");
 		return false;
     }
 
