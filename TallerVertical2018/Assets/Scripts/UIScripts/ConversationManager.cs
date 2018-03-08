@@ -12,7 +12,7 @@ public class ConversationManager : MonoBehaviour {
     public Text conversation;
 
     public GameObject canvas;
-	public Transform Player;
+	private Transform Player;
 
     //public FileInfo theSourceFile;
     //protected StreamReader reader = null;
@@ -22,6 +22,8 @@ public class ConversationManager : MonoBehaviour {
 	private int i = 0;
 	private bool doDialog;
 	private bool selected = false;
+
+	[SerializeField] EnableSmellVision ellenaScript;
 		
 	void Awake () {
 		
@@ -75,6 +77,9 @@ public class ConversationManager : MonoBehaviour {
 
 				canvas.SetActive (false);
 				Player.GetComponent<CharacterController>().enabled = true;
+				if (ellenaScript != null) {
+					ellenaScript.enableSmell();
+				}
 			}
 
         }
