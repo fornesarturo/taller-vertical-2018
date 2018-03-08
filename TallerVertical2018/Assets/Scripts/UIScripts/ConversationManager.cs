@@ -29,7 +29,7 @@ public class ConversationManager : MonoBehaviour {
 	void Awake () {
 		
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
-		//PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
+		PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
 	}
 
     // Use this for initialization
@@ -41,9 +41,9 @@ public class ConversationManager : MonoBehaviour {
 	void Update () {
 		
 		if (selected) {
-
+			Debug.Log ("selected");
 			if (PlayerPrefs.GetInt (conversationTitle + "dialog",0) == 0) {
-				
+					
 				Player.GetComponent<CharacterController>().enabled = false;
 				canvas.SetActive (true);
 				PlayerPrefs.SetInt (conversationTitle + "dialog", 1);
