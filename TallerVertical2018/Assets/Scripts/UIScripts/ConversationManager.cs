@@ -29,8 +29,7 @@ public class ConversationManager : MonoBehaviour {
 	void Awake () {
 		
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
-		
-		PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
+		//PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
 	}
 
     // Use this for initialization

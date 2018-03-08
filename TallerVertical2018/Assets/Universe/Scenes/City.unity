@@ -3850,7 +3850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &726707746
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7250,7 +7250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4263831488087662, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 7.88
       objectReference: {fileID: 0}
     - target: {fileID: 4263831488087662, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7295,6 +7295,10 @@ Prefab:
         type: 2}
       propertyPath: objects.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688839764317562, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114137937458168702, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
