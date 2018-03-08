@@ -9,6 +9,7 @@ public class DoorController : MonoBehaviour {
 	public string myName = "hola";
 	public bool isGazed;
 	public string sceneToLoad = "HouseDemo";
+	public GameObject[] dependsOn;
 
 	// Use this for initialization
 	void Start () {

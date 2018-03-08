@@ -20,11 +20,12 @@ public class ObjectController : MonoBehaviour {
 
 	void Awake() {
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
+		PlayerPrefs.SetInt (transform.parent.name + "Collected", 0);
 	}
 
 	// Use this for initialization
 	void Start () {
-		int collected = PlayerPrefs.GetInt (transform.name + "Collected", 0);
+		int collected = PlayerPrefs.GetInt (transform.parent.name + "Collected", 0);
 		if (collected == 1) {
 			Destroy (transform.parent.gameObject);
 		}
@@ -56,7 +57,7 @@ public class ObjectController : MonoBehaviour {
 					PlayerPrefs.SetString (Case + "Clues", currentClues.ToString ());
 				}
 			}
-			PlayerPrefs.SetInt (transform.name + "Collected", 1);
+			PlayerPrefs.SetInt (transform.parent.name + "Collected", 1);
 			canvasDescription.SetActive (false);
 			Destroy (transform.parent.gameObject);
 		}

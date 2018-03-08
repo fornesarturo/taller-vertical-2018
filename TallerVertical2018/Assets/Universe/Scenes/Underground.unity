@@ -209,6 +209,7 @@ MonoBehaviour:
   myName: hola
   isGazed: 0
   sceneToLoad: City
+  dependsOn: []
 --- !u!65 &37225347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3283,7 +3284,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1082503448357980, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad, type: 2}
       propertyPath: m_Name
-      value: GameItem (1)
+      value: AnilloItem
       objectReference: {fileID: 0}
     - target: {fileID: 224052900230885926, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
         type: 2}
@@ -3970,6 +3971,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114198096635641758, guid: e18ceb0311dd5eb408d27c68238d4385,
+        type: 2}
+      propertyPath: dependsOn.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4337979391724346, guid: e18ceb0311dd5eb408d27c68238d4385, type: 2}
       propertyPath: m_LocalPosition.x
       value: 32.96
@@ -4023,13 +4029,18 @@ Prefab:
     - target: {fileID: 114198096635641758, guid: e18ceb0311dd5eb408d27c68238d4385,
         type: 2}
       propertyPath: sceneToLoad
-      value: CityDemo
+      value: City
       objectReference: {fileID: 0}
     - target: {fileID: 33342112870241670, guid: e18ceb0311dd5eb408d27c68238d4385,
         type: 2}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 114198096635641758, guid: e18ceb0311dd5eb408d27c68238d4385,
+        type: 2}
+      propertyPath: dependsOn.Array.data[0]
+      value: 
+      objectReference: {fileID: 1638446726}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e18ceb0311dd5eb408d27c68238d4385, type: 2}
   m_IsPrefabParent: 0
