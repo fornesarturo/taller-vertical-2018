@@ -2,16 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
-* TO DO
-    * Pull or build array from player prefs
-    * Remove object from array when picked up
-    * Change to look up by tag
-        * Add new cariable
-        * var target = GameObject.FindWithTag("enemy that spawns tag");
-    * Use currentIndexFunction
-*/
-
 
 public class SmellVision : MonoBehaviour
 {
@@ -21,9 +11,9 @@ public class SmellVision : MonoBehaviour
     GameObject arrow;
     bool arrowExists;
 
-    public Transform target;
-
-    public Transform[] locations;
+    public GameObject[] items;
+    public GameObject[] doors;
+    public GameObject[] objects;
     int currentIndex = 0;
 
     // Use this for initialization
@@ -39,10 +29,12 @@ public class SmellVision : MonoBehaviour
     }
 
     void createArrow() {
+        selectArray();
+        updateIndex();
         arrow = Instantiate(arrowPrefab) as GameObject;
         arrow.transform.position = Player.GetChild(0).position + new Vector3(0, -0.8f, 0) + (Player.GetChild(0).forward * 3);
-        float angle = Vector3.Angle(target.position - arrow.transform.position, transform.forward);
-        angle = calculateCorrectAngle(target, arrow, angle);
+        float angle = Vector3.Angle(objects[currentIndex].transform.position - arrow.transform.position, transform.forward);
+        angle = calculateCorrectAngle(objects[currentIndex], arrow, angle);
         arrow.transform.Rotate(0, 0, angle);
         changeArrowExistence();
     }
@@ -65,8 +57,8 @@ public class SmellVision : MonoBehaviour
     }
 
     void updateIndex() {
-        for (int i = currentIndex; i < locations.Length; i++) {
-            if (locations[i] == null)
+        for (int i = currentIndex; i < objects.Length; i++) {
+            if (objects[i] == null)
             {
                 i++;
             }
@@ -76,10 +68,21 @@ public class SmellVision : MonoBehaviour
         }
     }
 
-    float calculateCorrectAngle(Transform target, GameObject arrow, float angle) {
-        if (target.position.x > arrow.transform.position.x) {
+    float calculateCorrectAngle(GameObject target, GameObject arrow, float angle) {
+        if (target.transform.position.x > arrow.transform.position.x) {
             return -angle;
         }
         return angle;
+    }
+
+    void selectArray() {
+        items = GameObject.FindGameObjectsWithTag("GameItem");
+        doors = GameObject.FindGameObjectsWithTag("Door");
+        if (items.Length > 0) {
+            objects = items;
+        }
+        else {
+            objects = doors;
+        }
     }
 }
