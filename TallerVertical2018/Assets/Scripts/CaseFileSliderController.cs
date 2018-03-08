@@ -27,8 +27,20 @@ public class CaseFileSliderController : MonoBehaviour {
 				
 				slider.value -= 0.01f;
 			}
+			string caseName = this.transform.parent.parent.parent.name;
+			string sliderName = this.gameObject.name;
+			string sliderKeyName = caseName + sliderName;
+
+			if (PlayerPrefs.GetInt (sliderKeyName) != slider.value) {
+				PlayerPrefs.SetInt ( sliderKeyName, (int)Mathf.Floor(slider.value * 10) );
+				Debug.Log (PlayerPrefs.GetInt (sliderKeyName));
+				Debug.Log (sliderKeyName);
+			}
+			//Debug.Log (slider.value);
+
+			//PlayerPrefs.SetInt ("", slider.value);
 		}
-		Debug.Log (this.transform.parent.parent.parent.transform.name + " : " + Mathf.Floor(slider.value * 10));
+		//Debug.Log (this.transform.parent.parent.parent.transform.name + " : " + Mathf.Floor(slider.value * 10));
 		//Debug.Log(slider.value);
 		//this.transform.parent.transform.name;
 	}

@@ -354,7 +354,7 @@ Prefab:
     - target: {fileID: 224985228804305776, guid: f4cbfd2c32561714982ba6ef694adec6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224900105181738110, guid: f4cbfd2c32561714982ba6ef694adec6,
         type: 2}
@@ -375,6 +375,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalScale.z
       value: 0.0039999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669552561347154, guid: f4cbfd2c32561714982ba6ef694adec6, type: 2}
+      propertyPath: m_Name
+      value: Toxicidad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4cbfd2c32561714982ba6ef694adec6, type: 2}
@@ -557,7 +561,7 @@ Prefab:
     - target: {fileID: 224985228804305776, guid: f4cbfd2c32561714982ba6ef694adec6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4cbfd2c32561714982ba6ef694adec6, type: 2}
@@ -1201,7 +1205,7 @@ Prefab:
     - target: {fileID: 224985228804305776, guid: f4cbfd2c32561714982ba6ef694adec6,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224900105181738110, guid: f4cbfd2c32561714982ba6ef694adec6,
         type: 2}
