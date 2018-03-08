@@ -39,15 +39,11 @@ public class SmellVision : MonoBehaviour
     }
 
     void createArrow() {
-        arrow = Instantiate(arrowPrefab, Player.transform) as GameObject;
+        arrow = Instantiate(arrowPrefab) as GameObject;
         arrow.transform.position = Player.GetChild(0).position + new Vector3(0, -0.8f, 0) + (Player.GetChild(0).forward * 3);
-        //arrow.transform.LookAt(locations[currentIndex]);
         float angle = Vector3.Angle(target.position - arrow.transform.position, transform.forward);
         angle = calculateCorrectAngle(target, arrow, angle);
         arrow.transform.Rotate(0, 0, angle);
-        //arrow.transform.Rotate(90, 90, 90);
-        //Debug.Log(target.position);
-        //Debug.Log(arrow.transform.position);
         changeArrowExistence();
     }
 
