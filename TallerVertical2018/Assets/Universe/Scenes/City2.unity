@@ -505,6 +505,7 @@ GameObject:
   - component: {fileID: 11834040}
   - component: {fileID: 11834039}
   - component: {fileID: 11834038}
+  - component: {fileID: 11834044}
   m_Layer: 0
   m_Name: FirstDoorDialog
   m_TagString: Untagged
@@ -641,6 +642,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11834044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11834037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1c4b66e365b5d4da20d43144aac9de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstDiag: {fileID: 779452299}
 --- !u!1001 &18854469
 Prefab:
   m_ObjectHideFlags: 0
@@ -3645,6 +3658,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4331092300876044, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad, type: 2}
       propertyPath: m_LocalPosition.x
       value: 83
@@ -3730,6 +3753,46 @@ Prefab:
       propertyPath: Player
       value: 
       objectReference: {fileID: 661284100}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11834044}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Cambio
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577749088359526, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad, type: 2}
   m_IsPrefabParent: 0
@@ -4629,7 +4692,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &779452300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4649,6 +4712,17 @@ MonoBehaviour:
         - m_Target: {fileID: 779452301}
           m_MethodName: SetSelected
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1666478722}
+          m_MethodName: EnableDoor
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9733,6 +9807,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b6e7c5f38ed1dc428962612646dab2a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1666478721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1666478723}
+  - component: {fileID: 1666478722}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1666478722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666478721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bae9e590e3ba10449b6ba46d195c53c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 1690837842}
+--- !u!4 &1666478723
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666478721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 82.91, y: 7.75, z: 21.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 123
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1680237640
 GameObject:
   m_ObjectHideFlags: 0
@@ -9969,6 +10084,22 @@ Prefab:
       propertyPath: m_Name
       value: FrankDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 27121e1179b92c841ae033e2bd76a5c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 27121e1179b92c841ae033e2bd76a5c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.023
+      objectReference: {fileID: 0}
+    - target: {fileID: 100048, guid: 27121e1179b92c841ae033e2bd76a5c4, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 100048, guid: 27121e1179b92c841ae033e2bd76a5c4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27121e1179b92c841ae033e2bd76a5c4, type: 3}
   m_IsPrefabParent: 0
@@ -9976,6 +10107,68 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100048, guid: 27121e1179b92c841ae033e2bd76a5c4, type: 3}
   m_PrefabInternal: {fileID: 1690837841}
+--- !u!114 &1690837843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690837842}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafaf8e96b6afc84286c4244bcc13aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myName: hola
+  isGazed: 0
+  sceneToLoad: CaseFileTest
+  dependsOn: []
+--- !u!114 &1690837844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1690837842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690837843}
+          m_MethodName: doorGazed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690837843}
+          m_MethodName: doorGazed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!64 &1690837845
 MeshCollider:
   m_ObjectHideFlags: 0
