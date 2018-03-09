@@ -43,7 +43,6 @@ public class ConversationManager : MonoBehaviour {
 	void Update () {
 		
 		if (selected) {
-			Debug.Log ("selected");
 			if (PlayerPrefs.GetInt (conversationTitle + "dialog",0) == 0) {
 					
 				Player.GetComponent<CharacterController>().enabled = false;
@@ -51,7 +50,6 @@ public class ConversationManager : MonoBehaviour {
 				PlayerPrefs.SetInt (conversationTitle + "dialog", 1);
 
 				TextAsset level = Resources.Load<TextAsset> (conversationTitle);
-				Debug.Log (level);
 				lines = level.text.Split ("\n" [0]);
 
 				transform.LookAt (Player.position);
