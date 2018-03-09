@@ -49,7 +49,7 @@ public class PauseButtonMethods : MonoBehaviour {
 				seconds += 1f;
 			} else {
 				canvas.gameObject.SetActive (false);
-				if (SceneManager.GetActiveScene ().name != "CaseFileTest") {
+				if (SceneManager.GetActiveScene ().name != "CaseFile") {
 					Player.GetComponent<CharacterController>().enabled = true;
 				}
 			}

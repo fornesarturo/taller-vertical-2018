@@ -26,7 +26,7 @@ public class PauseGame : MonoBehaviour {
 			Player.GetComponent<CharacterController>().enabled = false;
 		} else {
 			canvas.gameObject.SetActive (false);
-			if (SceneManager.GetActiveScene ().name != "CaseFileTest") {
+			if (SceneManager.GetActiveScene ().name != "CaseFile") {
 				Player.GetComponent<CharacterController>().enabled = true;
 			}
 		}
