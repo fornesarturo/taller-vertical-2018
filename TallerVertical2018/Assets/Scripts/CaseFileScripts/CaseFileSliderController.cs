@@ -30,7 +30,7 @@ public class CaseFileSliderController : MonoBehaviour {
 			string caseName = this.transform.parent.parent.parent.name;
 			string sliderName = this.gameObject.name;
 			string sliderKeyName = caseName + sliderName;
-
+			Debug.Log (sliderKeyName);
 			if (PlayerPrefs.GetInt (sliderKeyName) != slider.value) {
 				PlayerPrefs.SetInt ( sliderKeyName, (int)Mathf.Floor(slider.value * 10) );
 				Debug.Log (PlayerPrefs.GetInt (sliderKeyName));

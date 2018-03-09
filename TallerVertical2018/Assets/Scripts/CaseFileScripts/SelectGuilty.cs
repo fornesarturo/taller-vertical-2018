@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectGuilty : MonoBehaviour {
 
@@ -46,8 +47,8 @@ public class SelectGuilty : MonoBehaviour {
             }
             else
             {
-                //PlayerPrefs.SetString("NextSceneToLoad", PlayerPrefs.GetString("LastVisitedScene"));
-                //SceneManager.LoadScene("LoadingScreen", LoadSceneMode.Single);
+                PlayerPrefs.SetString("NextSceneToLoad", "Ending");
+                SceneManager.LoadScene("LoadingScreen", LoadSceneMode.Single);
                 Debug.Log("Oscar Guilty");
             }
             yield return new WaitForSecondsRealtime(1f);
@@ -65,8 +66,8 @@ public class SelectGuilty : MonoBehaviour {
             }
             else
             {
-                //PlayerPrefs.SetString("NextSceneToLoad", PlayerPrefs.GetString("LastVisitedScene"));
-                //SceneManager.LoadScene("LoadingScreen", LoadSceneMode.Single);
+				PlayerPrefs.SetString("NextSceneToLoad", "Ending");
+                SceneManager.LoadScene("LoadingScreen", LoadSceneMode.Single);
                 Debug.Log("Frank Guilty");
             }
             yield return new WaitForSecondsRealtime(1f);

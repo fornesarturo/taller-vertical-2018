@@ -30,7 +30,6 @@ public class PauseButtonMethods : MonoBehaviour {
 	}
 
 	public void Resume() {
-		Debug.Log ("Resume game!");
 		StartCoroutine ("resumeCorroutine");
 	}
 
@@ -42,7 +41,6 @@ public class PauseButtonMethods : MonoBehaviour {
 	}
 
 	IEnumerator resumeCorroutine() {
-		Debug.Log ("Started resume corroutine");
 		float seconds = 0f;
 		while (true) {
 			if (seconds < 1f) {
@@ -85,7 +83,6 @@ public class PauseButtonMethods : MonoBehaviour {
 	}
 		
 	IEnumerator exitCorroutine() {
-		Debug.Log ("Started exit corroutine");
 		float seconds = 0f;
 		while (true) {
 			if (seconds < 1f) {
