@@ -19,7 +19,7 @@ public class PlayerMov : MonoBehaviour {
 	void Awake(){
 		this.controller = GetComponent<CharacterController>();
 		this.steps = GetComponent<AudioSource> ();
-		steps.volume = 0.2f;
+		steps.volume = 0.9f;
 		steps.pitch=PlayerPrefs.GetFloat ("pitch", 1);
 		//this.controller.enabled = moveOnStart;
 		//PlayerPrefs.SetInt (SceneManager.GetActiveScene ().name + "dialog", 0);

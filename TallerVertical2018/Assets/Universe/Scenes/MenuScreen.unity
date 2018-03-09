@@ -795,7 +795,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 79176956}
-          m_MethodName: startGoToCityCorroutine
+          m_MethodName: ExitGame
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10483,7 +10483,7 @@ Prefab:
     - target: {fileID: 82395346806313288, guid: b1ee7f7c8084ad141b647982bedbd4fd,
         type: 2}
       propertyPath: m_Volume
-      value: 0.007
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}

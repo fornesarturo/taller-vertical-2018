@@ -31,7 +31,7 @@ public class ConversationManager : MonoBehaviour {
 		
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
 		voice = GetComponent<AudioSource> ();
-		voice.volume = 0.015f;
+		voice.volume = 0.65f;
 		//PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
 	}
 
