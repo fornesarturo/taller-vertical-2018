@@ -2485,6 +2485,15 @@ Prefab:
       propertyPath: m_Name
       value: AnilloItem
       objectReference: {fileID: 0}
+    - target: {fileID: 114310119717381522, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+        type: 2}
+      propertyPath: Clue
+      value: A shiny and suspicious ring.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892616251261084, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad, type: 2}
+      propertyPath: m_Name
+      value: Shiny ring
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad, type: 2}
   m_IsPrefabParent: 0

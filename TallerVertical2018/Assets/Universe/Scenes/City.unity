@@ -671,23 +671,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224471946802755698, guid: e820b742872ba5746837291d71f7b9e4,
     type: 2}
   m_PrefabInternal: {fileID: 23547852}
---- !u!114 &23547854 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114723536812204394, guid: e820b742872ba5746837291d71f7b9e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 23547852}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!114 &23547855 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114311351430698234, guid: e820b742872ba5746837291d71f7b9e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 23547852}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &23547856 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1031628973512076, guid: e820b742872ba5746837291d71f7b9e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 23547852}
 --- !u!1 &45370336
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,7 +2579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: eb266070403fd554cb6dbc074515b46b, type: 3}
       propertyPath: m_Name
-      value: Diamonds
+      value: Jewels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb266070403fd554cb6dbc074515b46b, type: 3}
@@ -2700,7 +2683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &411661032
 Transform:
   m_ObjectHideFlags: 0
@@ -3113,7 +3096,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 464399417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5754,8 +5737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d8857b5e895104cab1438f958d14cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clue: Un sorprendente cubo rojo. Un ejemplo que describe el Suprematismo a us maxima
-    expresion
+  Clue: 'Poor kid, so young and never got to play with his toys. I''m going to leave
+    this here. '
   itemName: {fileID: 1348859676}
   itemDescription: {fileID: 1348859677}
   canvasDescription: {fileID: 1348859678}
@@ -6624,6 +6607,14 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3288f113d00049c4091a99b416836c42, type: 2}
+    - target: {fileID: 400000, guid: dc14035f5b4745f489cd9e65a136646b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0732
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: dc14035f5b4745f489cd9e65a136646b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0109
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc14035f5b4745f489cd9e65a136646b, type: 3}
   m_IsPrefabParent: 0
@@ -7103,7 +7094,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d023f1f61ebdc6e458b7f2b6e2305862, type: 2}
     - target: {fileID: 100000, guid: 73edaf232e686e04fad79610e9ee5f21, type: 3}
       propertyPath: m_Name
-      value: Toy car
+      value: Old toy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73edaf232e686e04fad79610e9ee5f21, type: 3}
@@ -8844,75 +8835,12 @@ MeshCollider:
   m_GameObject: {fileID: 1312721469}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 3637999c4d8107440944a3b2d772096f, type: 3}
---- !u!114 &1312721472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312721469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1312721473}
-          m_MethodName: SetSelected
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1312721473}
-          m_MethodName: SetSelected
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
---- !u!114 &1312721473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312721469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d8857b5e895104cab1438f958d14cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Clue: Un sorprendente cubo rojo. Un ejemplo que describe el Suprematismo a us maxima
-    expresion
-  itemName: {fileID: 23547854}
-  itemDescription: {fileID: 23547855}
-  canvasDescription: {fileID: 23547856}
 --- !u!1 &1322194603
 GameObject:
   m_ObjectHideFlags: 0
@@ -9174,8 +9102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d8857b5e895104cab1438f958d14cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clue: Un sorprendente cubo rojo. Un ejemplo que describe el Suprematismo a us maxima
-    expresion
+  Clue: 'A map of the sewerds. A rat. Nothing suspicious here. '
   itemName: {fileID: 1271145306}
   itemDescription: {fileID: 1271145307}
   canvasDescription: {fileID: 1271145308}
@@ -11881,7 +11808,7 @@ GameObject:
   - component: {fileID: 1831173525}
   - component: {fileID: 1831173527}
   m_Layer: 0
-  m_Name: Ratrap
+  m_Name: Rat trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11961,8 +11888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d8857b5e895104cab1438f958d14cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clue: Un sorprendente cubo rojo. Un ejemplo que describe el Suprematismo a us maxima
-    expresion
+  Clue: Beter not touch this rat trap or I'll lose a finger!
   itemName: {fileID: 229392495}
   itemDescription: {fileID: 229392496}
   canvasDescription: {fileID: 229392497}
@@ -13751,8 +13677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d8857b5e895104cab1438f958d14cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clue: Un sorprendente cubo rojo. Un ejemplo que describe el Suprematismo a us maxima
-    expresion
+  Clue: I'm not taking this! Who knows what Frank is capable of if I steal his things??!
   itemName: {fileID: 1124454042}
   itemDescription: {fileID: 1124454043}
   canvasDescription: {fileID: 2011091494}
