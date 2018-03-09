@@ -2015,35 +2015,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114129377867877638, guid: 0b6e7c5f38ed1dc428962612646dab2a,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1616714984}
     - target: {fileID: 1122399774339078, guid: 0b6e7c5f38ed1dc428962612646dab2a, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114273044618651310, guid: 0b6e7c5f38ed1dc428962612646dab2a,
-        type: 2}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1561573115}
-    - target: {fileID: 114273044618651310, guid: 0b6e7c5f38ed1dc428962612646dab2a,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1616714984}
-    - target: {fileID: 114261122524543528, guid: 0b6e7c5f38ed1dc428962612646dab2a,
-        type: 2}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 144475988}
-    - target: {fileID: 114261122524543528, guid: 0b6e7c5f38ed1dc428962612646dab2a,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1616714984}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0b6e7c5f38ed1dc428962612646dab2a, type: 2}
   m_IsPrefabParent: 0
@@ -2518,11 +2493,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1892616251261084, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
     type: 2}
   m_PrefabInternal: {fileID: 1511727712}
---- !u!224 &1561573115 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224592071798552840, guid: 0b6e7c5f38ed1dc428962612646dab2a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1284782857}
 --- !u!1 &1571137187
 GameObject:
   m_ObjectHideFlags: 0
