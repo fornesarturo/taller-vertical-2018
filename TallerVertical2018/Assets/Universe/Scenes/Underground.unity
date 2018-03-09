@@ -269,6 +269,48 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!1001 &42743818
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 31.754171
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6.006603
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -81.17793
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366200394491204, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b1ee7f7c8084ad141b647982bedbd4fd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &81045200
 GameObject:
   m_ObjectHideFlags: 0
