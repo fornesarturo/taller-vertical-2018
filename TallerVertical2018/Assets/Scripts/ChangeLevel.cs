@@ -33,7 +33,7 @@ public class ChangeLevel : MonoBehaviour {
 			float progess = Mathf.Clamp01 (async.progress / 0.9f);
 			slider.value = progess;
 			if (async.progress == 0.9f) {
-				textLoading.text = "Picale Compa";
+				textLoading.text = "Press any key to continue";
 				if (Input.anyKey) {					
 					async.allowSceneActivation = true;	
 				}
