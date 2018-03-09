@@ -1422,12 +1422,17 @@ Prefab:
         type: 2}
       propertyPath: objects.Array.data[0]
       value: 
-      objectReference: {fileID: 1511727714}
+      objectReference: {fileID: 1511727713}
     - target: {fileID: 114409228319089880, guid: 1ff1fda17d357da4b8679bcbac9bd790,
         type: 2}
       propertyPath: objects.Array.data[1]
       value: 
       objectReference: {fileID: 1893401033}
+    - target: {fileID: 82867808425354412, guid: 1ff1fda17d357da4b8679bcbac9bd790,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ff1fda17d357da4b8679bcbac9bd790, type: 2}
   m_IsPrefabParent: 0
@@ -2416,6 +2421,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1511727713 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1082503448357980, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1511727712}
 --- !u!1 &1511727714 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1892616251261084, guid: 7d2797748e5fa2e47b3d8a3ab9b5a9ad,
