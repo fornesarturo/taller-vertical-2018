@@ -6192,7 +6192,7 @@ GameObject:
   - component: {fileID: 1062945149}
   - component: {fileID: 1062945148}
   m_Layer: 5
-  m_Name: PauseCanvasCaseFile
+  m_Name: MainMenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9244,7 +9244,7 @@ GameObject:
   - component: {fileID: 1552020530}
   - component: {fileID: 1552020529}
   m_Layer: 5
-  m_Name: Pause Background
+  m_Name: MainMenuBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
