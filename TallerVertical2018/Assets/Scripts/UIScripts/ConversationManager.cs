@@ -22,6 +22,7 @@ public class ConversationManager : MonoBehaviour {
 	private int i = 0;
 	private bool doDialog;
 	private bool selected = false;
+	private AudioSource voice;
 
 	[SerializeField] EnableSmellVision ellenaScript;
 	[SerializeField] string conversationTitle;
@@ -29,12 +30,13 @@ public class ConversationManager : MonoBehaviour {
 	void Awake () {
 		
 		Player = GameObject.FindGameObjectWithTag ("Player").transform;
+		voice = GetComponent<AudioSource> ();
+		voice.volume = 0.015f;
 		//PlayerPrefs.SetInt (conversationTitle + "dialog", 0);
 	}
 
     // Use this for initialization
     void Start () {
-		
     }
 	
 	// Update is called once per frame
@@ -58,6 +60,7 @@ public class ConversationManager : MonoBehaviour {
 				canvas.transform.rotation = transform.rotation;
 				canvas.transform.Rotate(0,180,0);
 
+				voice.Play();
 				animalName.text = lines [i];
 				conversation.text = lines [++i];
 				doDialog = true;
@@ -70,8 +73,11 @@ public class ConversationManager : MonoBehaviour {
     }
 
     void updateText() {
-		if (Input.GetButtonDown("Jump")&&doDialog) {	
+		if (Input.GetButtonDown("Jump")&&doDialog) {
 			if (i < lines.Length-1) {
+				if (!voice.isPlaying) {
+					voice.Play();
+				}
 				animalName.text = lines[++i];
 				conversation.text = lines[++i];
 			} else {
@@ -82,8 +88,10 @@ public class ConversationManager : MonoBehaviour {
 				Player.GetComponent<CharacterController>().enabled = true;
 
 				if (ellenaScript != null) {
+					PlayerPrefs.SetFloat ("pitch", 0.8f);
+					Player.GetComponent<AudioSource> ().pitch = 0.8f;
 					ellenaScript.enableSmell();
-				}
+				}		
 			}
 
         }
