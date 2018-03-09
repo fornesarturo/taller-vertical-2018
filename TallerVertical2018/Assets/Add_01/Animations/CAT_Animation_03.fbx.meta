@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 7c1141aa7426778429e93e760b069b1f
+timeCreated: 1520555817
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CAT
+    100002: //RootNode
+    100004: Cat_AUX_DOWN
+    100006: Cat_AUX_DOWN_ctl
+    100008: Cat_AUX_DOWN_grp
+    100010: Cat_AUX_UP
+    100012: Cat_AUX_UP_ctl
+    100014: Cat_AUX_UP_grp
+    100016: Cat_Back_L_IKHandle
+    100018: Cat_Back_R_IKHandle
+    100020: Cat_Elbow_Back_L
+    100022: Cat_Elbow_Back_R
+    100024: Cat_Elbow_Front_L
+    100026: Cat_Elbow_Front_R
+    100028: Cat_Elbow_Front_R_ctl
+    100030: Cat_Elbow_Front_R_ctl 1
+    100032: Cat_Elbow_Front_R_grp2
+    100034: Cat_Elbow_Front_R_grp4
+    100036: Cat_Elbow_Front_R_grp6
+    100038: Cat_Elbow_Front_R_grp7
+    100040: Cat_Front_L_IKHandle
+    100042: Cat_Front_R_IKHandle
+    100044: Cat_Head_C_
+    100046: Cat_Head_C_Base
+    100048: Cat_Head_C_Base_ctl
+    100050: Cat_Head_C_Base_grp
+    100052: Cat_Head_C_Mandible
+    100054: Cat_Head_C_Mouth7
+    100056: Cat_Head_L_Ear
+    100058: Cat_Head_L_EarTop
+    100060: Cat_Head_R_Ear
+    100062: Cat_Head_R_EarTop
+    100064: Cat_Knee_Back_L_IK_grp
+    100066: Cat_Knee_Back_L_IK_grp1
+    100068: Cat_Knee_Back_R_IK_grp
+    100070: Cat_Knee_Back_R_IK_grp1
+    100072: Cat_Knee_Front_R_IK_ctl
+    100074: Cat_Knee_Front_R_IK_ctl 1
+    100076: Cat_Knee_Front_R_IK_grp
+    100078: Cat_Knee_Front_R_IK_grp4
+    100080: Cat_Neck_03
+    100082: Cat_Paw_Back_L
+    100084: Cat_Paw_Back_R
+    100086: Cat_Paw_Front_L
+    100088: Cat_Paw_Front_R
+    100090: Cat_Root
+    100092: Cat_Shoulder_Back_L
+    100094: Cat_Shoulder_Back_R
+    100096: Cat_Shoulder_Front_L
+    100098: Cat_Shoulder_Front_R
+    100100: Cat_ShoulderBody_Back_L1
+    100102: Cat_ShoulderBody_Back_R
+    100104: Cat_ShoulderBody_Front_L
+    100106: Cat_ShoulderBody_Front_R
+    100108: Cat_Spine_C_01
+    100110: Cat_Spine_C_02
+    100112: Cat_Spine_C_02_ctl
+    100114: Cat_Spine_C_02_grp
+    100116: Cat_Spine_C_03
+    100118: Cat_Spine_C_Root
+    100120: Cat_Spine_C_Root_ctl
+    100122: Cat_Spine_C_Root_ctl 1
+    100124: Cat_Spine_C_Root_grp
+    100126: Cat_Spine_C_Root_grp1
+    100128: Cat_Tail_C_01
+    100130: Cat_Tail_C_02
+    100132: Cat_Tail_C_03
+    100134: Cat_Tail_C_04
+    100136: Cat_Toes_Back_L_01
+    100138: Cat_Toes_Back_L_02
+    100140: Cat_Toes_Back_L_03
+    100142: Cat_Toes_Back_R_01
+    100144: Cat_Toes_Back_R_02
+    100146: Cat_Toes_Back_R_03
+    100148: Cat_Toes_Front_L_01
+    100150: Cat_Toes_Front_L_02
+    100152: Cat_Toes_Front_L_03
+    100154: Cat_Toes_Front_R_01
+    100156: Cat_Toes_Front_R_02
+    100158: Cat_Toes_Front_R_03
+    100160: CL_RIGGATOUV2:Group2
+    100162: curve1
+    100164: Eyes_ctl
+    100166: Eyes_grp
+    100168: IK_Foot_Back_L_ctl
+    100170: IK_Foot_Back_L_grp
+    100172: IK_Foot_Back_R_ctl
+    100174: IK_Foot_Front_L_ctl
+    100176: IK_Foot_Front_R_ctl
+    100178: No_Transform
+    100180: pSphere1
+    100182: pSphere2
+    100184: R_Eyes_ctl
+    100186: R_Eyes_ctl 1
+    100188: R_Eyes_grp
+    100190: R_Eyes_grp1
+    100192: Rig
+    100194: Rig_grp
+    100196: Root_ctl
+    100198: Root_grp
+    100200: Spine
+    100202: World_Space_Control_grp_
+    400000: CAT
+    400002: //RootNode
+    400004: Cat_AUX_DOWN
+    400006: Cat_AUX_DOWN_ctl
+    400008: Cat_AUX_DOWN_grp
+    400010: Cat_AUX_UP
+    400012: Cat_AUX_UP_ctl
+    400014: Cat_AUX_UP_grp
+    400016: Cat_Back_L_IKHandle
+    400018: Cat_Back_R_IKHandle
+    400020: Cat_Elbow_Back_L
+    400022: Cat_Elbow_Back_R
+    400024: Cat_Elbow_Front_L
+    400026: Cat_Elbow_Front_R
+    400028: Cat_Elbow_Front_R_ctl
+    400030: Cat_Elbow_Front_R_ctl 1
+    400032: Cat_Elbow_Front_R_grp2
+    400034: Cat_Elbow_Front_R_grp4
+    400036: Cat_Elbow_Front_R_grp6
+    400038: Cat_Elbow_Front_R_grp7
+    400040: Cat_Front_L_IKHandle
+    400042: Cat_Front_R_IKHandle
+    400044: Cat_Head_C_
+    400046: Cat_Head_C_Base
+    400048: Cat_Head_C_Base_ctl
+    400050: Cat_Head_C_Base_grp
+    400052: Cat_Head_C_Mandible
+    400054: Cat_Head_C_Mouth7
+    400056: Cat_Head_L_Ear
+    400058: Cat_Head_L_EarTop
+    400060: Cat_Head_R_Ear
+    400062: Cat_Head_R_EarTop
+    400064: Cat_Knee_Back_L_IK_grp
+    400066: Cat_Knee_Back_L_IK_grp1
+    400068: Cat_Knee_Back_R_IK_grp
+    400070: Cat_Knee_Back_R_IK_grp1
+    400072: Cat_Knee_Front_R_IK_ctl
+    400074: Cat_Knee_Front_R_IK_ctl 1
+    400076: Cat_Knee_Front_R_IK_grp
+    400078: Cat_Knee_Front_R_IK_grp4
+    400080: Cat_Neck_03
+    400082: Cat_Paw_Back_L
+    400084: Cat_Paw_Back_R
+    400086: Cat_Paw_Front_L
+    400088: Cat_Paw_Front_R
+    400090: Cat_Root
+    400092: Cat_Shoulder_Back_L
+    400094: Cat_Shoulder_Back_R
+    400096: Cat_Shoulder_Front_L
+    400098: Cat_Shoulder_Front_R
+    400100: Cat_ShoulderBody_Back_L1
+    400102: Cat_ShoulderBody_Back_R
+    400104: Cat_ShoulderBody_Front_L
+    400106: Cat_ShoulderBody_Front_R
+    400108: Cat_Spine_C_01
+    400110: Cat_Spine_C_02
+    400112: Cat_Spine_C_02_ctl
+    400114: Cat_Spine_C_02_grp
+    400116: Cat_Spine_C_03
+    400118: Cat_Spine_C_Root
+    400120: Cat_Spine_C_Root_ctl
+    400122: Cat_Spine_C_Root_ctl 1
+    400124: Cat_Spine_C_Root_grp
+    400126: Cat_Spine_C_Root_grp1
+    400128: Cat_Tail_C_01
+    400130: Cat_Tail_C_02
+    400132: Cat_Tail_C_03
+    400134: Cat_Tail_C_04
+    400136: Cat_Toes_Back_L_01
+    400138: Cat_Toes_Back_L_02
+    400140: Cat_Toes_Back_L_03
+    400142: Cat_Toes_Back_R_01
+    400144: Cat_Toes_Back_R_02
+    400146: Cat_Toes_Back_R_03
+    400148: Cat_Toes_Front_L_01
+    400150: Cat_Toes_Front_L_02
+    400152: Cat_Toes_Front_L_03
+    400154: Cat_Toes_Front_R_01
+    400156: Cat_Toes_Front_R_02
+    400158: Cat_Toes_Front_R_03
+    400160: CL_RIGGATOUV2:Group2
+    400162: curve1
+    400164: Eyes_ctl
+    400166: Eyes_grp
+    400168: IK_Foot_Back_L_ctl
+    400170: IK_Foot_Back_L_grp
+    400172: IK_Foot_Back_R_ctl
+    400174: IK_Foot_Front_L_ctl
+    400176: IK_Foot_Front_R_ctl
+    400178: No_Transform
+    400180: pSphere1
+    400182: pSphere2
+    400184: R_Eyes_ctl
+    400186: R_Eyes_ctl 1
+    400188: R_Eyes_grp
+    400190: R_Eyes_grp1
+    400192: Rig
+    400194: Rig_grp
+    400196: Root_ctl
+    400198: Root_grp
+    400200: Spine
+    400202: World_Space_Control_grp_
+    2100000: CL_RIGGATOUV2_defaultMat1
+    2100002: lambert1
+    2300000: pSphere1
+    2300002: pSphere2
+    3300000: pSphere1
+    3300002: pSphere2
+    4300000: CL_RIGGATOUV2:Group2
+    4300002: pSphere1
+    4300004: pSphere2
+    7400000: Walking
+    7400002: Affirmation
+    7400004: Denial
+    7400006: STOP
+    7400008: TALKING
+    7400010: IDLE
+    9500000: //RootNode
+    13700000: CL_RIGGATOUV2:Group2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walking
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Affirmation
+      takeName: Take 001
+      firstFrame: 18
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Denial
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 144
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: STOP
+      takeName: Take 001
+      firstFrame: 145
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TALKING
+      takeName: Take 001
+      firstFrame: 221
+      lastFrame: 245
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: IDLE
+      takeName: Take 001
+      firstFrame: 246
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

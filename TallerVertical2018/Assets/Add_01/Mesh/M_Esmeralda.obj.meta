@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 93feeb053ca2b904d83e838a706933d7
+timeCreated: 1520557667
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: esmeraldaManos:esmeraldaAretes:Group15346
+    100004: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface1
+    100006: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface2
+    100008: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface4
+    100010: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface5
+    100012: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface6
+    100014: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface7
+    100016: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface8
+    100018: esmeraldaManos:esmeraldaManos:pSphere1
+    100020: esmeraldaManos:esmeraldaMono:Group47098
+    100022: esmeraldaManos:polySurface3_esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321
+    100024: esmeraldaPelo:Group21572
+    100026: esmeraldaPestanas:Group31982
+    100028: esmeraldaPestanas:Group43522
+    100030: esmeraldaPestanas:Group46507
+    100032: esmeraldaPestanas:Group46510
+    400000: //RootNode
+    400002: esmeraldaManos:esmeraldaAretes:Group15346
+    400004: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface1
+    400006: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface2
+    400008: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface4
+    400010: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface5
+    400012: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface6
+    400014: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface7
+    400016: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface8
+    400018: esmeraldaManos:esmeraldaManos:pSphere1
+    400020: esmeraldaManos:esmeraldaMono:Group47098
+    400022: esmeraldaManos:polySurface3_esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321
+    400024: esmeraldaPelo:Group21572
+    400026: esmeraldaPestanas:Group31982
+    400028: esmeraldaPestanas:Group43522
+    400030: esmeraldaPestanas:Group46507
+    400032: esmeraldaPestanas:Group46510
+    2100000: esmeraldaManos_esmeraldaAretes_Group15346Mat
+    2100002: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface1Mat
+    2100004: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface2Mat
+    2100006: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface4Mat
+    2100008: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface5Mat
+    2100010: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface6Mat
+    2100012: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface7Mat
+    2100014: esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321_esmeraldaManos_polySurface8Mat
+    2100016: esmeraldaManos_esmeraldaManos_pSphere1Mat
+    2100018: esmeraldaManos_esmeraldaMono_Group47098Mat
+    2100020: esmeraldaManos_polySurface3_esmeraldaManos_esmeraldaManos_esmeraldaOrejas_Group49321Mat
+    2100022: esmeraldaPelo_Group21572Mat
+    2100024: esmeraldaPestanas_Group31982Mat
+    2100026: esmeraldaPestanas_Group43522Mat
+    2100028: esmeraldaPestanas_Group46507Mat
+    2100030: esmeraldaPestanas_Group46510Mat
+    2300000: esmeraldaManos:esmeraldaAretes:Group15346
+    2300002: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface1
+    2300004: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface2
+    2300006: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface4
+    2300008: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface5
+    2300010: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface6
+    2300012: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface7
+    2300014: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface8
+    2300016: esmeraldaManos:esmeraldaManos:pSphere1
+    2300018: esmeraldaManos:esmeraldaMono:Group47098
+    2300020: esmeraldaManos:polySurface3_esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321
+    2300022: esmeraldaPelo:Group21572
+    2300024: esmeraldaPestanas:Group31982
+    2300026: esmeraldaPestanas:Group43522
+    2300028: esmeraldaPestanas:Group46507
+    2300030: esmeraldaPestanas:Group46510
+    3300000: esmeraldaManos:esmeraldaAretes:Group15346
+    3300002: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface1
+    3300004: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface2
+    3300006: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface4
+    3300008: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface5
+    3300010: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface6
+    3300012: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface7
+    3300014: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface8
+    3300016: esmeraldaManos:esmeraldaManos:pSphere1
+    3300018: esmeraldaManos:esmeraldaMono:Group47098
+    3300020: esmeraldaManos:polySurface3_esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321
+    3300022: esmeraldaPelo:Group21572
+    3300024: esmeraldaPestanas:Group31982
+    3300026: esmeraldaPestanas:Group43522
+    3300028: esmeraldaPestanas:Group46507
+    3300030: esmeraldaPestanas:Group46510
+    4300000: esmeraldaManos:esmeraldaAretes:Group15346
+    4300002: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface1
+    4300004: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface2
+    4300006: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface4
+    4300008: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface5
+    4300010: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface6
+    4300012: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface7
+    4300014: esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321_esmeraldaManos:polySurface8
+    4300016: esmeraldaManos:esmeraldaManos:pSphere1
+    4300018: esmeraldaManos:esmeraldaMono:Group47098
+    4300020: esmeraldaManos:polySurface3_esmeraldaManos:esmeraldaManos:esmeraldaOrejas:Group49321
+    4300022: esmeraldaPelo:Group21572
+    4300024: esmeraldaPestanas:Group31982
+    4300026: esmeraldaPestanas:Group43522
+    4300028: esmeraldaPestanas:Group46507
+    4300030: esmeraldaPestanas:Group46510
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
