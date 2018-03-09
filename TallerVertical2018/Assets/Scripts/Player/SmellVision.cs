@@ -12,6 +12,7 @@ public class SmellVision : MonoBehaviour
     bool arrowExists;
 
     public GameObject[] objects;
+    Transform searching;
     int currentIndex = 0;
 
     // Use this for initialization
@@ -29,12 +30,12 @@ public class SmellVision : MonoBehaviour
     void createArrow() {
 		if (updateIndex ()) {
 			arrow = Instantiate (arrowPrefab) as GameObject;
-			arrow.transform.position = transform.GetChild (0).position + new Vector3 (0, -0.8f, 0) + (transform.GetChild (0).forward * 3);
-			arrow.transform.position = new Vector3 (arrow.transform.position.x, transform.position.y - 1f, arrow.transform.position.z);
-			float angle = Vector3.Angle (objects [currentIndex].transform.position - arrow.transform.position, transform.forward);
-			angle = calculateCorrectAngle (objects [currentIndex], arrow, angle);
-			arrow.transform.Rotate (0, 0, angle);
-			changeArrowExistence ();
+            arrow.transform.position = transform.GetChild (0).position + new Vector3 (0, -0.8f, 0) + (transform.GetChild (0).forward * 3);
+			arrow.transform.position = new Vector3 (arrow.transform.position.x, transform.position.y - 1.2f, arrow.transform.position.z);
+            checkTag();
+            arrow.transform.LookAt( new Vector3(searching.position.x, transform.position.y, searching.position.z));
+            arrow.transform.Rotate(90,0,0);
+            changeArrowExistence ();
 			destroyArrow();
 		}
     }
@@ -54,6 +55,15 @@ public class SmellVision : MonoBehaviour
         arrowExists = !arrowExists;
     }
 
+    void checkTag() {
+        if (objects[currentIndex].tag == "Door") {
+            searching = objects[currentIndex].transform;
+        }
+        else {
+            searching =  objects[currentIndex].transform.GetChild(1);
+        }
+    }
+
     bool updateIndex() {
 		currentIndex = -1;
         for (int i = 0; i < objects.Length; i++) {
@@ -68,12 +78,5 @@ public class SmellVision : MonoBehaviour
         }
 		Debug.Log ("Nothing!");
 		return false;
-    }
-
-    float calculateCorrectAngle(GameObject target, GameObject arrow, float angle) {
-        if (target.transform.position.x > arrow.transform.position.x) {
-            return -angle;
-        }
-        return angle;
     }
 }
