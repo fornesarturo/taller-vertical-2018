@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testing/CaseFileTest.unity
     guid: ab61ba8bc3255554eaae76c8d5e421a9
+  - enabled: 1
+    path: Assets/Universe/Scenes/City2.unity
+    guid: 85db670a2ad7d1744ac8dedac26bddff
