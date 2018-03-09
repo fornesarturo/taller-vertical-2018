@@ -19,7 +19,9 @@ public class EnableSmellVision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (PlayerPrefs.GetInt ("ellenaDead") == 1) {
+
+		if (PlayerPrefs.GetInt ("ellenaDead", 0) == 1) {
+			Player.gameObject.GetComponent<SmellVision> ().enabled = true;
 			Destroy (this.gameObject);
 		}
 	}

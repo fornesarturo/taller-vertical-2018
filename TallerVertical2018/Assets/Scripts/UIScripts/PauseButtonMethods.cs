@@ -76,7 +76,7 @@ public class PauseButtonMethods : MonoBehaviour {
 			if (seconds < 1f) {
 				seconds += 1f;
 			} else {
-				PlayerPrefs.SetString ("NextSceneToLoad", "CaseFileTest");
+				PlayerPrefs.SetString ("NextSceneToLoad", "CaseFile");
 				PlayerPrefs.SetString ("LastVisitedScene", SceneManager.GetActiveScene().name);
 				SceneManager.LoadScene ("LoadingScreen", LoadSceneMode.Single);
 			}
@@ -92,7 +92,8 @@ public class PauseButtonMethods : MonoBehaviour {
 				seconds += 1f;
 			} else {
 				PlayerPrefs.DeleteAll ();
-				Application.Quit ();
+				PlayerPrefs.SetString ("NextSceneToLoad", "MenuScreen");
+				SceneManager.LoadScene ("LoadingScreen", LoadSceneMode.Single);
 			}
 			yield return new WaitForSecondsRealtime (1f);
 		}
